@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: "700",
+    marginRight: 90,
   },
 
   icons: {
@@ -34,7 +35,7 @@ export const styles = StyleSheet.create({
   tabText: {
     fontSize: 16,
     marginRight: 20,
-    color: "#65676B",
+    fontWeight: "800",
   },
 
   activeTab: {

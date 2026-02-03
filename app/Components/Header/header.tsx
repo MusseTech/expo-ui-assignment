@@ -8,6 +8,10 @@ const Header = () => {
     <View style={styles.container}>
       {/* Top Row */}
       <View style={styles.topRow}>
+        <TouchableOpacity onPress={() => console.log("menu pressed")}>
+          <Ionicons name="menu" size={30} color="black" />
+        </TouchableOpacity>
+
         <Text style={styles.title}>Marketplace</Text>
 
         <View style={styles.icons}>
@@ -27,6 +31,7 @@ const Header = () => {
 
       {/* Tabs */}
       <View style={styles.tabs}>
+        <Text style={styles.tabText}>Sell</Text>
         <Text style={[styles.tabText, styles.activeTab]}>For you</Text>
         <Text style={styles.tabText}>Categories</Text>
       </View>
