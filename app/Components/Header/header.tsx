@@ -1,0 +1,37 @@
+import React from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import { styles } from "./style";
+import { Ionicons } from "@expo/vector-icons";
+
+const Header = () => {
+  return (
+    <View style={styles.container}>
+      {/* Top Row */}
+      <View style={styles.topRow}>
+        <Text style={styles.title}>Marketplace</Text>
+
+        <View style={styles.icons}>
+          <TouchableOpacity>
+            <Ionicons name="chatbubble-ellipses-outline" size={24} />
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <Ionicons name="person-circle-outline" size={26} />
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <Ionicons name="search-outline" size={24} />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/* Tabs */}
+      <View style={styles.tabs}>
+        <Text style={[styles.tabText, styles.activeTab]}>For you</Text>
+        <Text style={styles.tabText}>Categories</Text>
+      </View>
+    </View>
+  );
+};
+
+export default Header;
