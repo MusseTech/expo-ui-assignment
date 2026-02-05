@@ -34,12 +34,18 @@ export const styles = StyleSheet.create({
 
   tabText: {
     fontSize: 16,
-    marginRight: 20,
+    marginRight: 10,
     fontWeight: "800",
+    paddingHorizontal: 14,
+    paddingVertical: 6,
   },
 
   activeTab: {
     color: "#1877F2",
     fontWeight: "600",
+    backgroundColor: "#e0effd",
+    borderRadius: 16,
+    paddingHorizontal: 14,
+    paddingVertical: 6,
   },
 });

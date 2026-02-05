@@ -1,7 +1,7 @@
-import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
-import { styles } from "./style";
 import { Ionicons } from "@expo/vector-icons";
+import React from "react";
+import { Text, TouchableOpacity, View } from "react-native";
+import { styles } from "./style";
 
 const Header = () => {
   return (
@@ -16,11 +16,11 @@ const Header = () => {
 
         <View style={styles.icons}>
           <TouchableOpacity>
-            <Ionicons name="chatbubble-ellipses-outline" size={24} />
+            <Ionicons name="chatbubble-ellipses" size={24} />
           </TouchableOpacity>
 
           <TouchableOpacity>
-            <Ionicons name="person-circle-outline" size={26} />
+            <Ionicons name="person-outline" size={26} />
           </TouchableOpacity>
 
           <TouchableOpacity>
