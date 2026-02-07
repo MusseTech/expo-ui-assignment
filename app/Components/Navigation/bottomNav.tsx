@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Alert, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./style";
 
 const BottomNav = () => {
@@ -32,14 +32,14 @@ const BottomNav = () => {
       </TouchableOpacity>
 
       {/* Notifications Tab */}
-      <TouchableOpacity style={styles.tab}>
+      <TouchableOpacity onPress={() => Alert.alert("Alert Button pressed")} style={styles.tab}>
         <View>
           <Ionicons name="notifications-outline" size={24} color="#000000" />
           <View style={styles.badge}>
             <Text style={styles.badgeText}>5</Text>
           </View>
         </View>
-        <Text style={styles.label}>Notifications</Text>
+        <Text style={styles.label}>Alert</Text>
       </TouchableOpacity>
 
       {/* Profile Tab */}
