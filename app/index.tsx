@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import Header from "./Components/Header/header";
+import BottomNav from "./Components/Navigation/bottomNav";
 
 export default function Index() {
   return (
@@ -7,7 +8,6 @@ export default function Index() {
       {/* Header */}
       <Header />
 
-      {/* Page Content (temporary) */}
       <View
         style={{
           flex: 1,
@@ -15,8 +15,11 @@ export default function Index() {
           alignItems: "center",
         }}
       >
-        {/* Middle + Bottom will come later */}
+        {/* Middle Content */}
       </View>
+
+      {/* Bottom Navigation */}
+      <BottomNav />
     </View>
   );
 }
